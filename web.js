@@ -2,10 +2,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-//var fs = require("fs");
-
 app.get('/', function(request, response) {
-    //var buffer = fs.readFile("index.html");
     response.send("testing 1 2 3");
 }
 
