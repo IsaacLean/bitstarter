@@ -5,9 +5,9 @@ var app = express.createServer(express.logger());
 var fs = require("fs");
 
 app.get('/', function(request, response) {
-    var buffer = fs.readFile("index.html");
-    response.send(buffer);
-});
+    //var buffer = fs.readFile("index.html");
+    response.send("testing 1 2 3");
+}
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
